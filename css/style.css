@@ -1,0 +1,445 @@
+body{
+    font-family: Myriad Pro;
+
+}
+div#navbarNav {
+    flex-direction: row-reverse;
+}
+ul.navbar-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    flex-direction: row-reverse !important;
+}
+nav.primary-menu.navbar {
+    background: #fff;
+    box-shadow: 1px 1px 5px 1px #ccc;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+}
+ul.navbar-nav1 {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: left;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    width: 100%;
+}
+a.nav-link.active.button {
+    background: #2a569f;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+    width: 100px;
+    justify-content: center;
+    text-align: center;
+    margin-left: 40px;
+}
+ul.navbar-nav li a {
+    margin-right: 40px;
+    color: #000;
+    font-weight: 600;
+}
+.uploading-new-sec {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 0 0;
+}
+ul.navbar-nav .nav-item .nav-link {
+    color: #000;
+}
+.slider {
+    height: 680px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* This css is for normalizing styles. You can skip this. */
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  .section-bg h3 {
+    color: #fff;
+    margin: 0 0 30px 0;
+}
+  
+  .new {
+    padding: 20px 0 0 0;
+  }
+  
+  .new .form-group {
+    display: block;
+    margin-bottom: 15px;
+  }
+  
+  .new .form-group input {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+  }
+  
+  .new .form-group label {
+    position: relative;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+  
+  .new .form-group label:before {
+    content:'';
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 2px solid #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-left: 5px;
+    border-radius: 50%;
+  }
+  
+  .new .form-group input:checked + label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 9px;
+    width: 6px;
+    height: 14px;
+    border: solid #0079bf;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  .new form {
+    display: flex;
+    justify-content: space-evenly;
+    color: #fff;
+    width: 40%;
+    margin: 0 auto;
+    flex-direction: row-reverse !important;
+    /* background: #fff; */
+}
+.section-bg {
+    width: 100%;
+    /* justify-content: center; */
+    position: absolute;
+    top: 15%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+}
+.content-wrap h2 {
+    font-size: 50px;
+    color: #fff;
+    font-weight: 600;
+}
+
+
+.upload-sec .form-container {
+    width: 40%;
+    /* display: flex; */
+    justify-content: center;
+    /* align-items: center; */
+    margin: 0 auto;
+}
+.upload-sec .upload-files-container {
+	background-color: #fff   ;
+	
+	padding: 5px 15px;
+	display: flex;
+   	align-items: center;
+   	justify-content: center;
+	flex-direction: column;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 10px 20px, rgba(0, 0, 0, 0.28) 0px 6px 6px;
+}
+.upload-sec .drag-file-area {
+    border: 1px dashed #b5b5b5;
+
+    margin: 10px 0 15px;
+    padding: 15px 50px;
+    text-align: center;
+    width: 100%;
+}
+.upload-sec .drag-file-area .upload-icon {
+	font-size: 50px;
+}
+.upload-sec .drag-file-area h3 {
+	font-size: 26px;
+	margin: 15px 0;
+}
+.upload-sec .drag-file-area label {
+	font-size: 19px;
+}
+.upload-sec .drag-file-area label .browse-files-text {
+	color: #8e8e8e;
+	font-weight: bolder;
+	cursor: pointer;
+}
+.upload-sec .browse-files span {
+	position: relative;
+	top: -25px;
+}
+.upload-sec .default-file-input {
+	opacity: 1;
+}
+.upload-sec .cannot-upload-message {
+	background-color: #ffc6c4;
+	font-size: 17px;
+	display: flex;
+	align-items: center;
+	margin: 5px 0;
+	padding: 5px 10px 5px 30px;
+	border-radius: 5px;
+	color: #BB0000;
+	display: none;
+}
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+.upload-sec .cannot-upload-message span, .upload-button-icon {
+	padding-right: 10px;
+}
+.upload-sec .cannot-upload-message span:last-child {
+	padding-left: 20px;
+	cursor: pointer;
+}
+.upload-sec .file-block {
+	color: #f7fff7;
+	background-color: #7b2cbf;
+  	transition: all 1s;
+	width: 390px;
+	position: relative;
+	display: none;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin: 10px 0 15px;
+	padding: 10px 20px;
+	border-radius: 25px;
+	cursor: pointer;
+}
+.upload-sec .file-info {
+	display: flex;
+	align-items: center;
+	font-size: 15px;
+}
+.upload-sec .file-icon {
+	margin-right: 10px;
+}
+.upload-sec .file-name, .file-size {
+	padding: 0 3px;
+}
+.upload-sec .remove-file-icon {
+	cursor: pointer;
+}
+.upload-sec .progress-bar {
+	display: flex;
+	position: absolute;
+	bottom: 0;
+	left: 4.5%;
+	width: 0;
+	height: 5px;
+	border-radius: 25px;
+	background-color: #4BB543;
+}
+.upload-sec .upload-button {
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 12px 50px;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.upload-sec .upload-button1 {
+    background-color: #2a569f;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 12px 50px;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.uploading-new-sec button {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.content-wrap-new {
+    margin: 50px 0 50px 0;
+}
+.new-sec {
+    background: url(../images/parallax-bg.png);
+    background-position: 100% center;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    padding: 80px;
+}
+.f-box {
+    background: #2a569f;
+    display: flex;
+    width: 100%;
+    border-radius: 50%;
+    height: 130px;
+    width: 130px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.new-sec h2 {
+    text-align: center;
+    color: #fff;
+    margin: 0px 0 65px 0;
+    display: inline-block;
+    width: 100%;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+.new-sec h3 {
+    color: #fff;
+    font-size: 22px;
+    /* text-align: center; */
+    margin: 10px;
+    text-transform: capitalize;
+}
+.new-sec .row {
+    flex-direction: row-reverse;
+}
+.mt-30{
+    margin-top: 50px !important;
+}
+.f-box:hover {
+    background: #042254;
+    transition: 0.3s ease;
+}
+.heading-block h2 {
+    color: #2a569f;
+    text-align: center;
+    font-size: 50px;
+    margin: 30px 0 30px 0;
+}
+.heading-block h2::after {
+    content: "";
+    background: #2a569f;
+    display: block;
+    height: 5px;
+    width: 146px;
+    margin: 10px auto;
+}
+.browse-files img {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 27px auto;
+}
+footer.footer {
+    background: url(../images/footer-bg.png);
+    color: #fff;
+    padding: 50px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.foter-links h2::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100px;
+    background: #fff;
+    margin: 10px 0 0 0;
+} 
+.foter-links ul li {
+    list-style: none;
+    text-align: right;
+    line-height: 35px;
+}
+.foter-links h2 {
+    text-align: right;
+    font-size: 21px;
+    margin: 0 0 30px 0;
+}
+li.align {
+    font-size: 12px;
+    color: #ddd;
+    font-weight: 600;
+}
+footer.footer .row {
+    flex-direction: row-reverse;
+}
+ul.soreket-foot li {
+    list-style: none;
+    /* padding-left: 15px; */
+}
+ul.soreket-foot li {
+    line-height: 42px;
+}
+ul.soreket-foot i {
+    margin-left: 10px;
+}
+ul.social-linkes li {
+    display: inline;
+ 
+}
+ul.social-linkes i {
+    color: #2a569f;
+    background: #fff;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul.social-linkes {
+    display: flex;
+}
+ul.soreket-foots li a {
+    color: #fff;
+    text-decoration: none;
+    line-height: 50px;
+}
+ul.soreket-foots li a:hover {
+    color: #ddd;
+    transition: .4s;
+}
+ul.emexlogo img {
+    margin: 8px 0 30px 0;
+}
+.copyright {
+    background: #2a569f;
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    padding: 10px;
+}
+.copy h2 {
+    font-size: 16px;
+}
